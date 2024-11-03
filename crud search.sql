@@ -27,12 +27,6 @@ GO;
 	select*from  Student
 	GO;
 
-CREATE PROCEDURE SEARCH
-    @firstname NVARCHAR(100)
-   AS
-    select * from Student  WHERE firstname = @firstname;
-   GO;
-     EXEC SEARCH @firstname = 'rumaisa';
 
 CREATE PROCEDURE updateStudent
    AS
